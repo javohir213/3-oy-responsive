@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>3-imtihon-responsive</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="site-logo site-logo-active" href="./index.html">
+            <img
+              class="site-logo__img"
+              src="./images/logo.svg"
+              alt=" logo"
+            />
+          </a>
+          <div class="site-header__right-site active-site">
+            <div class="lang-btn-site">
+              <div class="languages">
+                <a class="languages__link" href="#">Uz</a>
+                <a class="languages__link" href="#">Ru</a>
+                <a class="languages__link languages__link--active" href="#"
+                  >En</a
+                >
+              </div>
+              <button class="hamburg-btn" type="button">&#9776;</button>
+            </div>
+            <nav class="navbar">
+              <ul class="navbar__list navbar__list--active">
+                <li class="navbar__item">
+                  <a class="navbar__link navbar__link--active" href="#"
+                    >Services</a
+                  >
+                </li>
+                <li class="navbar__item">
+                  <a class="navbar__link" href="#">Portfolio</a>
+                </li>
+                <li class="navbar__item">
+                  <a class="navbar__link" href="#">About us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <span class="site-header__line"></span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="form-group">
+            <div class="form-group__design-info">
+              <h2 class="design-title">Ux & Ui design</h2>
+              <p class="info-text">
+                In the current tech scenario, one can't predict what device
+                their user will use to interact with a product. This is why it's
+                always a good idea to build something that supports all devices.
+                However it is nearly impossible to design for every screen size
+                with so many .
+              </p>
+            </div>
+            <span class="form-group__line line"></span>
+            <div class="form-group__inner">
+              <form
+                class="form-group__forms"
+                action="https://echo.htmlacademy.ru/"
+                method="post"
+                autocomplete="off"
+              >
+                <div class="user-name">
+                  <label for="user-name" class="user-name__label">
+                    Ism Familiya
+                  </label>
+                  <input
+                    id="user-name"
+                    class="user-name__input"
+                    type="text"
+                    name="user_name"
+                    placeholder="Ismingini kiriting"
+                    required
+                  />
+                </div>
+                <div class="user-company">
+                  <label for="user" class="user-company__label">
+                    Companiyani kiriting
+                    
+                  </label>
+                  <input
+                  id="user"
+                      class="user-company__input"
+                      type="text"
+                      name="company"
+                      placeholder="Companiya"
+                      required
+                    />
+                </div>
+                <div class="user-name-link">
+                  <label for="label" class="user-name-link__label">
+                    Telegram username
+                    
+                  </label>
+                  <input
+                  id="label"
+                      class="user-name-link__input"
+                      type="text"
+                      name="user_telegram_name"
+                      placeholder="Username"
+                      required
+                    />
+                </div>
+                <div class="user-phone">
+                  <label for="number" class="user-phone__label">
+                    Phone number
+                    
+                  </label>
+                  <input
+                  id="number"
+                      class="user-phone__input"
+                      type="tel"
+                      name="user_phone_number"
+                      value="+998 99 0990049"
+                      required
+                    />
+                </div>
+                <div class="user-site">
+                  <label class="user-site__label" for="user-site-selection"
+                    >Sayni turini tanlang</label
+                  >
+                  <select
+                    class="user-site__select"
+                    id="user-site-selection"
+                    name="site_type"
+                  >
+                    <option selected disabled>Saytni turini tanlang</option>
+                    <option value="manaviy_sayt">Manaviy madaniy sayt</option>
+                    <option value="sport_sayt">Sport turlarini qolab quvvatlash sayt</option>
+                    
+                  </select>
+                </div>
+                <div class="user-select-link">
+                  <label class="user-select-link__label" for="user-links"
+                    >Sizga boglanish usulini tanlang</label
+                  >
+                  <select
+                    class="user-select-link__select"
+                    id="user-links"
+                    name="site_type"
+                  >
+                    <option selected disabled>
+                      Sizga boglanish usulini tanlang
+                    </option>
+                    
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                    
+                  </select>
+                </div>
+                <div class="user-text-message">
+                  <label class="user-text-message__label" for="user-message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="user-text-message__textarea"
+                    id="user-message"
+                    name="message"
+                  >
+                  </textarea>
+                </div>
+                <button class="button" type="submit">Jonatish</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+.site-header {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.site-header__inner {
+    @include flexbox;
+}
+
+.site-logo__img {
+    width: 106px;
+    height: 43px;
+}
+
+.site-header__right-site {
+    @include flexbox;
+    flex-direction: row-reverse;
+}
+
+.navbar__list {
+    @include flexbox;
+    list-style: none;
+}
+
+.navbar__item {
+    margin-right: 35px;
+}
+
+.navbar__link {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.3;
+}
+
+.navbar__link--active {
+    opacity: 2;
+}
+
+.lang-btn-site {
+    display: flex;
+}
+
+.languages {
+    margin-left: 15px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 75px;
+}
+
+.languages__link {
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    margin-right: 10px;
+}
+
+.languages__link--active {
+    margin-right: 0;
+    opacity: 1;
+    color: #fff;
+}
+
+.hamburg-btn {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+}
+
+.site-header__line, .line {
+    position: absolute;
+    top: 200px;
+    display: block;
+    width: 100%;
+    max-width: 1240px;
+    border-top: 1px solid #FFFFFF;
+    opacity: 0.6;
+}
+
+
+@media only screen and (max-width: 426px){
+    
+    .site-header {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .site-header--active  .site-logo{
+        display: none;
+    }
+    
+    .site-header__right-site {
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        flex-direction: column;
+        width: 380px;
+    }
+
+    
+    
+    
+    .lang-btn-site {
+        justify-content: space-between;
+        width: 380px;
+    }
+
+
+
+    
+    
+    .languages {
+        display: none;
+    }
+
+    .site-header--active .languages {
+        display: block;
+    }
+    
+    .hamburg-btn {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .navbar__list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        top: 75px;
+        left: 0;
+        width: 370px;
+        height: 100vh;
+        background-color: #222;
+    }
+
+    .site-header--active .navbar .navbar__list {
+        display: block;
+    }
+
+    .navbar__item {
+        margin-bottom: 25px;
+    }
+    
+    .navbar__link {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 50px;
+
+        &:active {
+            background-color: #0040DD;
+            opacity: 1;
+        }
+    }
+    
+    
+    .site-header__line {
+        display: none;
+    }
+    
+    
+}
+
+
+
+@media only screen and (max-width: 376px){
+
+    .site-header__right-site {
+        width: 340px;
+    }
+    
+    .lang-btn-site {
+        justify-content: space-between;
+        width: 340px;
+    }
+}
+
+
+@media only screen and (max-width: 321px){
+
+    .site-header__right-site {
+        width: 280px;
+    }
+    
+    .lang-btn-site {
+        justify-content: space-between;
+        width: 280px;
+    }
+}
+
+
+
+
+
+
+
+

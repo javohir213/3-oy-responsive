@@ -1,0 +1,273 @@
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+}
+
+.form-group__design-info {
+    width: 100%;
+    max-width: 440px;
+}
+
+.design-title {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.info-text {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.form-group__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    position: absolute;
+    left: 465px;
+    width: 100%;
+    border-top: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.form-group__forms {
+    width: 100%;
+    max-width: 711px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 393px;
+    margin-right: 30px;
+}
+
+
+
+.user-name__input {
+    @include input-first-reset;
+    display: block;
+    width: 100%;
+    max-width: 393px;
+    color: #fff;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.user-company {
+    width: 100%;
+    max-width: 288px;
+}
+
+.user-company__input {
+    @include input-first-reset;
+    display: block;
+    width: 100%;
+    max-width: 288px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.user-name-link {
+    width: 100%;
+    max-width: 338px;
+    margin-right: 35px;
+}
+
+.user-name-link__input {
+    @include input-first-reset;
+    display: block;
+    width: 100%;
+    max-width: 338px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.user-phone {
+    width: 100%;
+    max-width: 338px;
+    
+}
+
+.user-phone__input {
+    @include input-last-reset;
+    display: block;
+    width: 100%;
+    max-width: 338px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.user-site {
+    width: 100%;
+    max-width: 287px;
+    margin-right: 30px;
+}
+
+.user-site__select {
+    @include input-first-reset;
+    display: block;
+    width: 100%;
+    max-width: 287px;
+    appearance: none;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: right 32px center;
+}
+
+option {
+    background-color: #1C1C1E;
+}
+
+.user-select-link {
+    width: 100%;
+    max-width: 394px;
+}
+
+.user-select-link__select {
+    @include input-first-reset;
+    display: block;
+    width: 100%;
+    max-width: 394px;
+    appearance: none;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: right 32px center;
+}
+
+.user-text-message {
+    width: 100%;
+    max-width: 711px;
+}
+
+.user-text-message__label {
+    display: block
+}
+
+.user-text-message__textarea {
+    @include input-first-reset;
+    display: block;
+    width: 100%;
+    max-width: 711px;
+    min-height: 168px;
+    resize: vertical;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 127px;
+    height: 42px;
+    padding: 10px 15px;
+    background-image: url(../images/icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    background-color: #0040DD;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    text-align: left;
+}
+
+
+
+
+@media only screen and (max-width: 426px){
+
+    .form-group {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-group__design-info {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .info-text {
+        margin-bottom: 40px;
+    }
+
+    .form-group__forms {
+        align-items: center;
+    }
+
+    .line  {
+        display: none;
+    }
+
+    .user-name, .user-company, .user-name-link, .user-phone, .user-site, .user-select-link, .user-text-message, .button {
+        width: 100%;
+        max-width: 343px;
+        margin-right: 0;
+    }
+
+    .user-name__input, .user-company__input, .user-name-link__input, .user-phone__input, .user-site__select, .user-select-link__select, .user-text-message__textarea {
+        width: 100%;
+        max-width: 343px;
+        margin-bottom: 30px;
+    }
+
+    .user-text-message {
+        display: none;
+    }
+
+    .button {
+        margin-bottom: 65px;
+        background-position: right 26px center;
+    }
+}
+
+
+
+@media only screen and (max-width: 376px){
+
+    
+}
+
+
+@media only screen and (max-width: 321px){
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
